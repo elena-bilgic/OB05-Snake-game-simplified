@@ -59,7 +59,7 @@ def main():
         # Проверка на столкновение с границами или самой собой
         if (new_head[0] < 0 or new_head[0] >= WIDTH or new_head[1] < 0 or new_head[1] >= HEIGHT or new_head in snake[1:]):
             running = False
-            print("Игра окончена")
+            print("Игра окончена. Змейка врезалась!")
 
         # Отрисовка
         screen.fill((255, 255, 255))
